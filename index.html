@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>IPHONE</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--June Barr, Find Your Iphone Interface-->
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+</style>
+
+<div class="phone">
+
+  <div class="Find-your-iPhone">Find Your iPhone
+
+    <img id="image" src="http://3.bp.blogspot.com/-YCVVDgIisjY/UYuUy62spgI/AAAAAAAADbc/oSo-_Wsu8Yg/s1600/Find+my+iPhone+icon.PNG">
+
+    <div class="container">
+
+      <body>
+        <form name="form" method="post" onSubmit="return ValidateEmail()">
+          Apple ID: <input type="text" class="email" name="email" placeholder="e-mail"><br> 
+          Password <input type="text" class "pwd" placeholder="Password " id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Please not that the password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+          <br>
+          <button class="btn" type="submit" value="Sign In" onclick="setColor('button', '#101010')">Sign in</button>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</form>
+      </body>
+
+    </div>
+
+    <div class="links">
+      <center><font size="1" color="#66ff33">
+    <a href="https://support.apple.com/en-us/HT201365">Forgot Apple ID or Password</a>
+    <br><br><a href="">Setup Instructions</a>
+        </font></center>
+  </div>
+</div>
+
+    <div id="popup"> Your session has expired
+    </div>
+
+</div> 
+  </div>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+/*June Barr Find IPhone CSS*/
+.btn {
+  
+  color: #000;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -ms-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear;
+}
+/*Imported font from Google Fonts*/
+@font-face {
+  font-family: 'Bitter', serif;
+}
+
+.links {
+  color: 66ff33;
+  font-size: 15px;
+  font-family:Bitter;
+  text-decoration: underline;
+}
+
+.links:hover {
+  font-size: 1px;
+  color: 66ff33;
+}
+/*This is for the title at the top of the application*/
+.Find-your-iPhone {
+  margin: 20px 0px 0px 0px;
+  font-family: Bitter;
+  color: #000000;
+  font-weight: bold;
+  font-size: 25px;
+  font-family:Bitter;
+  text-align: center;
+
+}
+/*This dictates the phones visual interface*/
+.phone {
+  background-color: #ffffff;
+  width: 300px;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+  font-family: Bitter;
+  border-radius: 5%;
+  border: 1px solid black;
+  display: flex;
+  cursor:green;
+}
+
+/*This is the formatting of the image, the image was found on a blogspot discussing the features of "find my iphone."*/
+#image {
+  width: 200px;
+  height: 180px;
+  float: clear;
+  border-radius: 20;
+  border: 0px solid grey;
+  margin: 28px 0px 0px 0px;
+}
+
+
+button {
+  width: 85%;
+  height: 40px;
+  padding: 0px;
+  background-color: #;
+  color: #0d0d0d;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size:25px;
+  font-family:bitter;
+}
+
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  margin: 0px 0px 0px 0px;
+}
+  
+/*this is for the containier that contains the username and password*/
+.container {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 0px 0px 0px 0px;
+  caret-color: #f2f2f2;
+  border: 3px solid #f2f2f2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  
+ 
+}
+/*Attempt to get the email to have a green cursor*/
+.email {
+    cursor: auto; url(https://www.iconsdb.com/icons/preview/green/cursor-3-xxl.png), auto;
+}
+
+/*the properties for the pop-up to let the user know that their session has expired*/
+#popup {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin: 0px 0px 0px -140px; 
+    background-color: #ff3300; 
+    color: #ffff; 
+    text-align: center; 
+    border-radius: 5px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+    box-shadow: 3px 3px #f2f2f2;
+}
+
+
+#popup.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
